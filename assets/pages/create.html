@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="title">Cadastrar</title>
+  </head>
+  <body>
+    <form action="home.html" method="get" class="fill mt-4">
+      <div class="fill-container">
+        <main class="mb-3">
+          <div class="fill-title">
+            <h2>Criar Conta</h2>
+          </div>
+          <div class="field floating">
+            <input
+              id="nameId"
+              class="floating__input"
+              required
+              name="input name"
+              placeholder="Placeholder"
+            />
+            <label for="nameId" class="floating__label" data-content="Nome">
+              <span class="hidden--visually"></span>
+            </label>
+          </div>
+
+          <div class="field floating">
+            <input
+              id="last-nameId"
+              class="floating__input"
+              required
+              name="input name"
+              placeholder="Placeholder"
+            />
+            <label
+              for="last-nameId"
+              class="floating__label"
+              data-content="Sobrenome"
+            >
+              <span class="hidden--visually"></span>
+            </label>
+          </div>
+
+          <div class="field floating">
+            <input
+              id="email"
+              type="email"
+              required
+              class="floating__input"
+              name="input name"
+              placeholder="Placeholder"
+            />
+            <label
+              for="email"
+              class="floating__label"
+              data-content="Endereço de email"
+            >
+              <span class="hidden--visually"></span>
+            </label>
+          </div>
+
+          <div class="field floating">
+            <input
+              id="passwordID"
+              class="floating__input"
+              required
+              name="input name"
+              placeholder="Placeholder"
+              type="password"
+            />
+            <label
+              for="passwordID"
+              class="floating__label"
+              data-content="Senha"
+            >
+              <span class="hidden--visually"></span>
+            </label>
+          </div>
+        </main>
+        <button class="btn btn-wide">Começar a Assistir</button>
+        <div class="fill-help mt-2">
+          <p>
+            Já possui conta no <strong>gater</strong>?
+            <a href="./login.html">Entre</a>.
+          </p>
+        </div>
+      </div>
+    </form>
+    <svg
+      class="l-footer-wave"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill-opacity="1"
+        d="M0,288L120,266.7C240,245,480,203,720,202.7C960,203,1200,245,1320,266.7L1440,288L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+      ></path>
+    </svg>
+    <footer class="pb-4 l-footer">
+      <main>
+        <img src="../../public/icons/logo.svg" alt="Logo branco gater" />
+        <p><strong>gater</strong></p>
+      </main>
+      <div class="l-footer-copy">
+        @ Copyright 2021 gater. Todos os Direitos Reservados
+      </div>
+    </footer>
+  </body>
+</html>

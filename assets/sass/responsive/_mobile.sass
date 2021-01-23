@@ -1,0 +1,99 @@
+@media screen and ( max-width: 1000px )
+  //fill
+  .fill
+    &-container
+      padding: 0 18%
+  //nav
+  .l-nav
+    &-container
+      flex-direction: column-reverse 
+    &-buttons
+      margin-bottom: 1rem
+    
+  //swiper
+  .swiper-button-prev, .swiper-button-next
+    display: none !important
+
+  //select
+  .select-menu
+    &-month
+      margin-bottom: 1rem
+      align-self: start
+      margin-left: 1rem
+    &-main
+      flex-direction: column
+  
+    &-container
+      padding: 0
+
+    &-days
+      width: 95%
+  
+  //games
+  .games
+    &-container
+      flex-direction: column  
+      flex-wrap: nowrap
+      height: 80rem
+@media screen and ( max-width: 700px )
+  //fill
+  .fill
+    &-container
+      padding: 0 10%
+
+  //footer
+  .l-footer
+    margin-top: 0.7rem
+    main
+      p
+        font-size: 2.5rem
+    &-copy
+      padding: 0 10%
+  
+  //select
+  .select-menu
+  
+  //specific-game
+  .game
+    &-container
+      padding: 0 2rem
+    &-content
+      h2
+        font-size: 1.25rem
+      li
+        font-size: 0.75rem
+
+@media screen and ( max-width: 500px )
+  //nav
+  .l-nav
+    &-container
+      padding: 
+    &-logo
+      display: none
+    &-buttons
+      transform: scale(0.75)
+    &-prog
+      margin-right: .75rem
+      h1
+        font-size: .8rem
+  
+  //games
+  .games
+    &-image
+      figcaption
+        font-size: 1px !important
+    &-container
+      height: 70rem
+    &-game
+      transform: scale(0.75)    
+      &:hover
+        transform: scale(0.9)
+
+  //game -> specific-game
+  .game
+    &-image
+      figure
+        img
+          width: 100%
+        figcaption
+          font-size: 0.75rem !important

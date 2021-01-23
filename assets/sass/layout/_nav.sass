@@ -1,0 +1,40 @@
+.l-nav
+  &-container
+    border-bottom: 1px solid darken($grey, 10 )
+    padding: 0.5rem 1.75rem
+    @include flex(row, space-between)
+  &-left
+    @include flex
+  &-logo
+    margin-right: 1.5rem
+    img
+      width: 3rem
+  &-prog
+    position: relative
+    cursor: pointer
+    text-align: center
+    margin-right: 2.5rem
+    h1
+      a
+        text-transform: uppercase
+        text-decoration: none
+        color: $white
+      font-size: 1.05rem
+
+      &::after
+        content: ""
+        cursor: default
+        position: absolute
+        bottom: -32.5%
+        height: 0.1rem
+        transition: 1s ease
+        left: 50%
+        border-radius: 3px
+        transform: translateX(-50%) scaleX(0)
+        width: 100%
+        background: $lilac
+      &:hover::after
+        transform: translateX(-50%) scaleX(1)
+  &-buttons
+    width: 14rem
+    @include flex(row, space-between)

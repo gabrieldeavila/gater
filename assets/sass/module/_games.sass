@@ -1,0 +1,30 @@
+.games
+  width: 100%
+  &-container
+    height: 40rem
+    padding: 0 6rem
+    @include flex(row, space-between)
+  &-game
+    width: 21rem
+    text-decoration: none
+    transition: 0.4s ease
+
+    &:hover
+      transform: translateY(-4%) scale(1.1)
+      transition: 0.4s ease
+    &-img
+      overflow: hidden
+      width: 100% 
+      img
+        width: 100%
+    &-info
+      h2, p
+        margin: 0
+      h2
+        color: $white
+        margin-top: 1rem
+      p
+        color: $grey
+        font-size: 0.75rem
+        font-weight: 700
+        margin-top: 0.5rem      

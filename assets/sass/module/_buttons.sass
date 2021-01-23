@@ -1,0 +1,27 @@
+.btn
+  @extend %btn
+  &-wide
+    background: $lilac
+    width: 100%
+    color: $black
+    transition: ease 0.2s
+    &:hover
+      background: lighten($lilac, 10 )
+      transition: ease 0.3s
+  &-normal
+    color: $white
+    padding: 0.5rem 1.25rem
+    
+  &-lilac
+    background: $lilac
+    transition: ease 0.3s
+    &:hover
+      background: darken($lilac, 5 )
+      transition: ease 0.3s
+
+  &-grey
+    transition: ease 0.3s
+    background: $grey
+    &:hover
+      background: darken($grey, 10 )
+      transition: ease 0.3s

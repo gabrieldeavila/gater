@@ -1,0 +1,32 @@
+.select-menu
+  width: 100%
+  &-container
+    padding: 0 6rem 
+  &-main
+    border-bottom: 1px solid darken($grey, 10)
+    @include flex(row, space-between)
+  &-month
+    color: $grey
+    font-weight: 700
+  &-days
+    width: 75%
+    padding-right: 5%
+  
+  &-day
+    color: $white
+    height: 98%
+    font-weight: 700
+    width: 4.5rem
+    cursor: pointer
+    text-transform: uppercase
+    transition: 0.3s ease 
+    border-bottom: 3px solid $black
+    @include flex(column)
+    &:hover
+      background: $lilac
+      color: $black
+      transition: 0.3s ease 
+      border-bottom: 1px solid $lilac
+
+    p
+      margin: 0
